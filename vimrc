@@ -150,7 +150,7 @@ set wildignore=*.o,*.obj,*~,*.png,*.jpg,*.gif "stuff to ignore when tab completi
 
 " ================ Appearance =======================
 
-if &term =~ "xterm-256color"
+if &term =~ "xterm-256color" || has("gui_running")
   "get solarized colorscheme
   set background=dark
   " let g:solarized_termcolors=256
