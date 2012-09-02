@@ -149,13 +149,15 @@ set wildignore=*.o,*.obj,*~,*.png,*.jpg,*.gif "stuff to ignore when tab completi
 
 
 " ================ Appearance =======================
-try
-    "get solarized colorscheme
-    set background=dark
-    colorscheme solarized
-catch "if you can't, use this scheme
-    colorscheme molokai
-endtry
+
+if &term =~ "xterm-256color"
+  "get solarized colorscheme
+  set background=dark
+  " let g:solarized_termcolors=256
+  colorscheme solarized
+else "if you can't, use this scheme
+  colorscheme molokai
+endif
 
 if has("gui_running")
   set gfn=Monaco\ for\ Powerline\ 11
@@ -169,15 +171,15 @@ let g:nerdtree_tabs_open_on_gui_startup = 0 "never open nerdtree on startup
 
 "trying to get Go support in tagbar
 let g:tagbar_type_go = {
-    \ 'ctagstype': 'go',
-    \ 'kinds' : [
-        \'p:package',
-        \'f:function',
-        \'v:variables',
-        \'t:type',
-        \'c:const'
-    \]
-\}
+      \ 'ctagstype': 'go',
+      \ 'kinds' : [
+      \'p:package',
+      \'f:function',
+      \'v:variables',
+      \'t:type',
+      \'c:const'
+      \]
+      \}
 
 "time to dive into vim, arrow keys will never work
 inoremap <Up> <nop>

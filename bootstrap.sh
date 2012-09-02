@@ -8,3 +8,5 @@ git clone https://github.com/ajy/vimfiles ~/.vim && cd ~/.vim && ln -s ~/.vim/vi
 git submodule init && git submodule update
 #for tagbar
 sudo apt-get install exuberant-ctags
+# now install plugins into vim
+vim +BundleInstall +q +q
