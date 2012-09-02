@@ -70,9 +70,9 @@ set scrolloff=3                 "add some context while scroling
 set spelllang=en_gb             "set spell to use british english
 syntax on
 
-"use the system clipboard by default
+"use the system clipboard by default, removing due to yankring compatibility problems
 "http://vim.wikia.com/wiki/Accessing_the_system_clipboard
-set clipboard=unnamed
+" set clipboard=unnamed
 
 " ================ remapped keys =====================
 
@@ -113,6 +113,9 @@ nmap ; :
 "<C-s> will save quickly
 imap <C-s> <C-o>:w<CR>
 
+"key mappings to copy paste using system clipboard
+map <leader>y "+y
+map <leader>p "+p
 
 " ================ Persistent swp/backup ==================
 " Keep swaps and backups in one place.
