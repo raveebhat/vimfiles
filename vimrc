@@ -35,6 +35,9 @@ Bundle 'godlygeek/tabular'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'YankRing.vim'
 
+"Language support bundles
+Bundle 'tpope/vim-markdown'
+
 "misc bundles
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/syntastic'
