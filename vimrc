@@ -46,6 +46,7 @@ Bundle 'myusuf3/numbers.vim'
 " Colorschemes
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tomasr/molokai'
+Bundle 'w0ng/vim-hybrid'
 
 " ================ General Config ====================
 
