@@ -24,8 +24,9 @@ Bundle 'garbas/vim-snipmate'
 Bundle 'Lokaltog/vim-easymotion.git'
 Bundle 'scrooloose/nerdtree'
 Bundle 'jistr/vim-nerdtree-tabs'
+if exectuable("ctags) "requires exuberant-ctags
 Bundle 'majutsushi/tagbar'
-"requires exuberant-ctags
+endif
 
 "handy editing bundles
 Bundle 'sjl/gundo.vim'
