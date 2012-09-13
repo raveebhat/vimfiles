@@ -97,6 +97,9 @@ nnoremap <F4> :NERDTreeTabsToggle<CR>
 " open tagbar window
 nmap <F8> :TagbarToggle<CR>
 
+" open the YankRing.vim window
+nnoremap <silent> <F11> :YRShow<CR>
+
 "logical movement
 noremap j gj
 noremap k gk
