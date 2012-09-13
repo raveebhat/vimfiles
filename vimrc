@@ -24,8 +24,9 @@ Bundle 'garbas/vim-snipmate'
 Bundle 'Lokaltog/vim-easymotion.git'
 Bundle 'scrooloose/nerdtree'
 Bundle 'jistr/vim-nerdtree-tabs'
+if exectuable("ctags") "requires exuberant-ctags
 Bundle 'majutsushi/tagbar'
-"requires exuberant-ctags
+endif
 
 "handy editing bundles
 Bundle 'sjl/gundo.vim'
@@ -98,6 +99,9 @@ nnoremap <F4> :NERDTreeTabsToggle<CR>
 " open tagbar window
 nmap <F8> :TagbarToggle<CR>
 
+" open the YankRing.vim window
+nnoremap <silent> <F11> :YRShow<CR>
+
 "logical movement
 noremap j gj
 noremap k gk
@@ -126,7 +130,7 @@ silent !mkdir ~/.vim/tmp > /dev/null 2>&1
 silent !mkdir ~/.vim/swp > /dev/null 2>&1
 set backupdir=~/.vim/tmp
 set directory=~/.vim/swp
-
+let g:yankring_history_dir=~/.vim/tmp
 
 " ================ Indentation ======================
 
