@@ -128,7 +128,7 @@ silent !mkdir ~/.vim/tmp > /dev/null 2>&1
 silent !mkdir ~/.vim/swp > /dev/null 2>&1
 set backupdir=~/.vim/tmp
 set directory=~/.vim/swp
-
+let g:yankring_history_dir=~/.vim/tmp
 
 " ================ Indentation ======================
 
