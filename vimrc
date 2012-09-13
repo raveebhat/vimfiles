@@ -24,8 +24,9 @@ Bundle 'garbas/vim-snipmate'
 Bundle 'Lokaltog/vim-easymotion.git'
 Bundle 'scrooloose/nerdtree'
 Bundle 'jistr/vim-nerdtree-tabs'
-if exectuable("ctags") "requires exuberant-ctags
-Bundle 'majutsushi/tagbar'
+if executable("ctags")
+  "requires exuberant-ctags
+  Bundle 'majutsushi/tagbar'
 endif
 
 "handy editing bundles
@@ -51,6 +52,7 @@ Bundle 'w0ng/vim-hybrid'
 
 " ================ General Config ====================
 
+set t_Co=256                    "Always use all 256 colors
 set number                      "Line numbers are good
 set showcmd                     "show partially written commands (in the bottom-right corner)
 set backspace=indent,eol,start  "Allow backspace in insert mode
@@ -63,7 +65,7 @@ set ruler                       "get a handy ruler in the corner
 set encoding=utf-8              "Necessary to show unicode glyphs for powerline
 set fileformats=unix,mac,dos    "get all the file formats, set to particular one using :set fileformat= command
 set showmatch                   "show matching bracket always
-set mouse=a                     "set mouse mode to all, can use the mouse a little bit now
+set mouse=a                     "set mouse mode to all, so i can use it
 set laststatus=2                "always show the status line, required with powerline
 set nofoldenable                "Say no to code folding...
 set cpoptions+=$                "show $ at the end of the selection when using c,has to be here otherwise it gets reset
@@ -100,7 +102,7 @@ nnoremap <F4> :NERDTreeTabsToggle<CR>
 nmap <F8> :TagbarToggle<CR>
 
 " open the YankRing.vim window
-nnoremap <silent> <F11> :YRShow<CR>
+nnoremap <silent> <F10> :YRShow<CR>
 
 "logical movement
 noremap j gj
@@ -130,7 +132,7 @@ silent !mkdir ~/.vim/tmp > /dev/null 2>&1
 silent !mkdir ~/.vim/swp > /dev/null 2>&1
 set backupdir=~/.vim/tmp
 set directory=~/.vim/swp
-let g:yankring_history_dir=~/.vim/tmp
+let g:yankring_history_dir='~/.vim/tmp'
 
 " ================ Indentation ======================
 
