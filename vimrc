@@ -39,6 +39,7 @@ Bundle 'YankRing.vim'
 
 "Language support bundles
 Bundle 'tpope/vim-markdown'
+Bundle 'kchmck/vim-coffee-script'
 
 "misc bundles
 Bundle 'Lokaltog/vim-powerline'
