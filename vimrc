@@ -19,11 +19,13 @@ Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 Bundle 'honza/snipmate-snippets'
 Bundle 'garbas/vim-snipmate'
+Bundle 'tpope/vim-endwise'
 
 "file/directory movement bundles
 Bundle 'Lokaltog/vim-easymotion.git'
 Bundle 'scrooloose/nerdtree'
 Bundle 'jistr/vim-nerdtree-tabs'
+Bundle 'kien/ctrlp.vim'
 if executable("ctags")
   "requires exuberant-ctags
   Bundle 'majutsushi/tagbar'
