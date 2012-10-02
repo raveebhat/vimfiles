@@ -36,6 +36,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'godlygeek/tabular'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'YankRing.vim'
+Bundle 'tpope/vim-abolish'
 
 "Language support bundles
 Bundle 'tpope/vim-markdown'
