@@ -180,8 +180,12 @@ else
   let g:Powerline_symbols = 'compatible'
 endif
 
+
+" ================ Plugin customisation =============
+
 let g:syntastic_error_symbol='✗'
 let g:nerdtree_tabs_open_on_gui_startup = 0 "never open nerdtree on startup
+let g:ctrlp_map = '<leader>f' "avoids keymap collision with YankRing
 
 "trying to get Go support in tagbar
 let g:tagbar_type_go = {
