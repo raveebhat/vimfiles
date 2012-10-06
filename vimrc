@@ -166,14 +166,12 @@ set wildignore=*.o,*.obj,*~,*.png,*.jpg,*.gif "stuff to ignore when tab completi
 
 " ================ Appearance =======================
 
-if &term =~ "xterm-256color" || has("gui_running")
-  "get solarized colorscheme
-  set background=dark
-  " let g:solarized_termcolors=256
-  colorscheme solarized
-else "if you can't, use this scheme
-  colorscheme molokai
-endif
+try
+  "get jellybeans colorscheme
+  colorscheme jellybeans
+catch "if you can't, use this scheme
+  colorscheme ron
+endtry
 
 if has("gui_running")
   set gfn=Monaco\ for\ Powerline\ 11
