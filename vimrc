@@ -50,9 +50,11 @@ Bundle 'scrooloose/syntastic'
 Bundle 'myusuf3/numbers.vim'
 
 " Colorschemes
+Bundle 'nanotech/jellybeans.vim'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tomasr/molokai'
 Bundle 'w0ng/vim-hybrid'
+Bundle 'jnurmine/Zenburn'
 
 " ================ General Config ====================
 
