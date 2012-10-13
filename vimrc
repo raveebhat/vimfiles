@@ -161,8 +161,7 @@ set linebreak    "Wrap lines at convenient points
 
 set wildmenu
 set wildmode=longest,full
-set wildignore=*.o,*.obj,*~,*.png,*.jpg,*.gif "stuff to ignore when tab completing
-
+set wildignore=.svn,CVS,.git,.hg,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,.gitkeep,*~ "stuff to ignore when tab completing
 
 " ================ Appearance =======================
 
