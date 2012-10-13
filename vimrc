@@ -120,9 +120,6 @@ cmap w!! w !sudo tee % >/dev/null
 "never press shift to enter commands again
 nmap ; :
 
-"<C-s> will save quickly, buggy
-imap <C-s> <C-o>:w<CR>
-
 "key mappings to copy paste using system clipboard
 " map <leader>y "+y
 " map <leader>p "+p
