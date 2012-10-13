@@ -47,6 +47,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/syntastic'
 Bundle 'myusuf3/numbers.vim'
+Bundle 'tpope/vim-fugitive'
 
 " Colorschemes
 Bundle 'nanotech/jellybeans.vim'
