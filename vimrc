@@ -37,7 +37,6 @@ Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'godlygeek/tabular'
 Bundle 'tomtom/tcomment_vim'
-Bundle 'YankRing.vim'
 Bundle 'tpope/vim-abolish'
 
 "Language support bundles
@@ -48,6 +47,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/syntastic'
 Bundle 'myusuf3/numbers.vim'
+Bundle 'tpope/vim-fugitive'
 
 " Colorschemes
 Bundle 'nanotech/jellybeans.vim'
@@ -62,7 +62,7 @@ set t_Co=256                    "Always use all 256 colors
 set number                      "Line numbers are good
 set showcmd                     "show partially written commands (in the bottom-right corner)
 set backspace=indent,eol,start  "Allow backspace in insert mode
-set history=1000                "Store lots of :cmdline history
+set history=10000               "Store lots of :cmdline history
 set gcr=a:blinkon0              "Disable cursor blink, does not work in terminal
 set visualbell                  "No sounds
 set autoread                    "Reload files changed outside vim
@@ -80,9 +80,11 @@ set scrolloff=3                 "add some context while scroling
 set spelllang=en_gb             "set spell to use british english
 syntax on
 
-"use the system clipboard by default, removing due to yankring compatibility problems
+"use the system clipboard by default, only works if xterm-clippboard feature is available
 "http://vim.wikia.com/wiki/Accessing_the_system_clipboard
-" set clipboard=unnamed
+if has("xterm-clipboard")
+  set clipboard=unnamedplus
+endif
 
 " ================ remapped keys =====================
 
@@ -107,9 +109,6 @@ nnoremap <F4> :NERDTreeTabsToggle<CR>
 " open tagbar window
 nmap <F8> :TagbarToggle<CR>
 
-" open the YankRing.vim window
-nnoremap <silent> <F10> :YRShow<CR>
-
 "logical movement
 noremap j gj
 noremap k gk
@@ -123,12 +122,9 @@ cmap w!! w !sudo tee % >/dev/null
 "never press shift to enter commands again
 nmap ; :
 
-"<C-s> will save quickly
-imap <C-s> <C-o>:w<CR>
-
 "key mappings to copy paste using system clipboard
-map <leader>y "+y
-map <leader>p "+p
+" map <leader>y "+y
+" map <leader>p "+p
 
 " ================ Persistent swp/backup ==================
 " Keep swaps and backups in one place.
@@ -138,7 +134,6 @@ silent !mkdir ~/.vim/tmp > /dev/null 2>&1
 silent !mkdir ~/.vim/swp > /dev/null 2>&1
 set backupdir=~/.vim/tmp
 set directory=~/.vim/swp
-let g:yankring_history_dir='~/.vim/tmp'
 
 " ================ Indentation ======================
 
@@ -184,7 +179,6 @@ endif
 
 let g:syntastic_error_symbol='✗'
 let g:nerdtree_tabs_open_on_gui_startup = 0 "never open nerdtree on startup
-let g:ctrlp_map = '<leader>f' "avoids keymap collision with YankRing
 let g:gundo_preview_bottom = 1 "improve how gundo window is displayed
 
 "trying to get Go support in tagbar
