@@ -82,7 +82,7 @@ syntax on
 
 "use the system clipboard by default, removing due to yankring compatibility problems
 "http://vim.wikia.com/wiki/Accessing_the_system_clipboard
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 " ================ remapped keys =====================
 
