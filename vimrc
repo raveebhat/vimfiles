@@ -80,7 +80,7 @@ set scrolloff=3                 "add some context while scroling
 set spelllang=en_gb             "set spell to use british english
 syntax on
 
-"use the system clipboard by default, removing due to yankring compatibility problems
+"use the system clipboard by default, only works if gvim is also installed
 "http://vim.wikia.com/wiki/Accessing_the_system_clipboard
 set clipboard=unnamedplus
 
