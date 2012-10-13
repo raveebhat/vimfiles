@@ -37,7 +37,6 @@ Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'godlygeek/tabular'
 Bundle 'tomtom/tcomment_vim'
-Bundle 'YankRing.vim'
 Bundle 'tpope/vim-abolish'
 
 "Language support bundles
@@ -107,9 +106,6 @@ nnoremap <F4> :NERDTreeTabsToggle<CR>
 " open tagbar window
 nmap <F8> :TagbarToggle<CR>
 
-" open the YankRing.vim window
-nnoremap <silent> <F10> :YRShow<CR>
-
 "logical movement
 noremap j gj
 noremap k gk
@@ -138,7 +134,6 @@ silent !mkdir ~/.vim/tmp > /dev/null 2>&1
 silent !mkdir ~/.vim/swp > /dev/null 2>&1
 set backupdir=~/.vim/tmp
 set directory=~/.vim/swp
-let g:yankring_history_dir='~/.vim/tmp'
 
 " ================ Indentation ======================
 
