@@ -62,7 +62,7 @@ set t_Co=256                    "Always use all 256 colors
 set number                      "Line numbers are good
 set showcmd                     "show partially written commands (in the bottom-right corner)
 set backspace=indent,eol,start  "Allow backspace in insert mode
-set history=1000                "Store lots of :cmdline history
+set history=10000               "Store lots of :cmdline history
 set gcr=a:blinkon0              "Disable cursor blink, does not work in terminal
 set visualbell                  "No sounds
 set autoread                    "Reload files changed outside vim
