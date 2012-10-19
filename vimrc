@@ -142,6 +142,7 @@ set directory=~/.vim/swp
 " ================ Indentation ======================
 
 set autoindent
+set copyindent
 set smartindent
 set smarttab
 set shiftwidth=2
