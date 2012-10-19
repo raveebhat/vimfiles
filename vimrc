@@ -88,8 +88,8 @@ endif
 
 " ================ remapped keys =====================
 
-" remap leader key, yes i remap to space
-let mapleader = " "
+" remap leader key
+let mapleader = ","
 
 " mapping esc to an easy to reach combo
 inoremap jk <ESC>
