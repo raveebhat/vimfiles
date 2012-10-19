@@ -122,6 +122,10 @@ cmap w!! w !sudo tee % >/dev/null
 "never press shift to enter commands again
 nmap ; :
 
+" Quickly edit/reload the vimrc file
+nmap <silent> <leader>ev :e $MYVIMRC<CR>
+nmap <silent> <leader>sv :so $MYVIMRC<CR>
+
 "key mappings to copy paste using system clipboard
 " map <leader>y "+y
 " map <leader>p "+p
