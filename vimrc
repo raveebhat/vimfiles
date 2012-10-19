@@ -60,6 +60,7 @@ Bundle 'jnurmine/Zenburn'
 
 set t_Co=256                    "Always use all 256 colors
 set number                      "Line numbers are good
+set hidden                      "It's okay to have buffers that are hidden
 set showcmd                     "show partially written commands (in the bottom-right corner)
 set backspace=indent,eol,start  "Allow backspace in insert mode
 set history=10000               "Store lots of :cmdline history
