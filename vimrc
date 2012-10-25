@@ -127,9 +127,15 @@ nmap ; :
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
+"simple remaps for pane management
+map <C-j> <C-w>j
+map <C-j> <C-w>j
+map <C-j> <C-w>j
+map <C-j> <C-w>j
+
 "key mappings to copy paste using system clipboard
-" map <leader>y "+y
-" map <leader>p "+p
+map <leader>y "+y
+map <leader>p "+p
 
 " ================ Persistent swp/backup ==================
 " Keep swaps and backups in one place.
