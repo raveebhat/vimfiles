@@ -131,9 +131,9 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
 "simple remaps for pane management
 map <C-j> <C-w>j
-map <C-j> <C-w>j
-map <C-j> <C-w>j
-map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-h> <C-w>h
+map <C-l> <C-w>l
 
 "key mappings to copy paste using system clipboard
 map <leader>y "+y
