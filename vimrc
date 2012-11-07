@@ -26,6 +26,7 @@ Bundle 'Lokaltog/vim-easymotion.git'
 Bundle 'scrooloose/nerdtree'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'kien/ctrlp.vim'
+Bundle 'tpope/vim-eunuch'
 if executable("ctags")
   "requires exuberant-ctags
   Bundle 'majutsushi/tagbar'
@@ -38,6 +39,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'godlygeek/tabular'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'tpope/vim-abolish'
+Bundle 'vim-scripts/YankRing.vim'
 
 "Language support bundles
 Bundle 'tpope/vim-markdown'
