@@ -112,9 +112,6 @@ noremap k gk
 " toggle spell check
 nmap <leader>s :set spell!<CR>
 
-" Use :w!! to save with sudo if you're editing a readonly file,  untested
-cmap w!! w !sudo tee % >/dev/null
-
 "never press shift to enter commands again
 nmap ; :
 
