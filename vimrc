@@ -53,7 +53,6 @@ Bundle 'tpope/vim-fugitive'
 
 " Colorschemes
 Bundle 'nanotech/jellybeans.vim'
-Bundle 'altercation/vim-colors-solarized'
 Bundle 'tomasr/molokai'
 Bundle 'w0ng/vim-hybrid'
 Bundle 'jnurmine/Zenburn'
