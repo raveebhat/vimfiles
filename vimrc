@@ -208,8 +208,3 @@ let g:tagbar_type_go = {
       \]
       \}
 
-"time to dive into vim, arrow keys will never work
-inoremap <Up> <nop>
-inoremap <Down> <nop>
-inoremap <Left> <nop>
-inoremap <Right> <nop>
