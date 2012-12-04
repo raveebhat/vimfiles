@@ -90,24 +90,8 @@ let mapleader = ","
 " mapping esc to an easy to reach combo
 inoremap jk <ESC>
 
-" toggle numbers using numbers.vim's function
-nnoremap <F3> :NumbersToggle<CR>
-
-" open gundo window
-nnoremap <F5> :GundoToggle<CR>
-
 " shows invisibles in normal mode
 nmap <leader>l :set list!<CR>
-
-" open NERDTree window
-nnoremap <F4> :NERDTreeTabsToggle<CR>
-
-" open tagbar window
-nmap <F8> :TagbarToggle<CR>
-
-"open ctrlp window, fixes conflict between yankring mappings
-let g:ctrlp_map = '<leader>f'
-nnoremap <leader>b :CtrlPBuffer<CR>
 
 "logical movement
 noremap j gj
@@ -178,13 +162,35 @@ endif
 
 " ================ Plugin customisation =============
 
+"syntastic
 let g:syntastic_error_symbol='✗' "change the default error symbol
+
+"NERDTree and NERDTreeTabs
 let g:nerdtree_tabs_open_on_gui_startup = 0 "never open nerdtree on startup
 let NERDTreeIgnore = ['\.pyc$'] "ignore files in file browser
+" open NERDTree window
+nnoremap <F4> :NERDTreeTabsToggle<CR>
+
+"Gundo
 let g:gundo_preview_bottom = 1 "improve how gundo window is displayed
+" open gundo window
+nnoremap <F5> :GundoToggle<CR>
+
 let g:yankring_persist = 0 "don't persist yankring across session
+
 let g:SuperTabDefaultCompletionType = 'context' "use context to complete by default
+
 let g:snips_trigger_key='<c-space>' "changed snipmate trigger key
+
+" toggle numbers using numbers.vim's function
+nnoremap <F3> :NumbersToggle<CR>
+
+" open tagbar window
+nmap <F8> :TagbarToggle<CR>
+
+"open ctrlp window, fixes conflict between yankring mappings
+let g:ctrlp_map = '<leader>f'
+nnoremap <leader>b :CtrlPBuffer<CR>
 
 " trying to get sensible completion to work
 autocmd FileType *
