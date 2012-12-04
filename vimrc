@@ -165,7 +165,7 @@ try
   "get jellybeans colorscheme
   colorscheme jellybeans
 catch "if you can't, use this scheme
-  colorscheme ron
+  colorscheme slate
 endtry
 
 if has("gui_running")
