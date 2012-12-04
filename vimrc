@@ -178,21 +178,17 @@ endif
 
 " ================ Plugin customisation =============
 
-let g:syntastic_error_symbol='✗'
+let g:syntastic_error_symbol='✗' "change the default error symbol
 let g:nerdtree_tabs_open_on_gui_startup = 0 "never open nerdtree on startup
+let NERDTreeIgnore = ['\.pyc$'] "ignore files in file browser
 let g:gundo_preview_bottom = 1 "improve how gundo window is displayed
 let g:yankring_persist = 0 "don't persist yankring across session
-let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabDefaultCompletionType = 'context' "use context to complete by default
+let g:snips_trigger_key='<c-space>' "changed snipmate trigger key
 
-"trying to get Go support in tagbar
-let g:tagbar_type_go = {
-      \ 'ctagstype': 'go',
-      \ 'kinds' : [
-      \'p:package',
-      \'f:function',
-      \'v:variables',
-      \'t:type',
-      \'c:const'
-      \]
-      \}
-
+" trying to get sensible completion to work
+autocmd FileType *
+            \ if &omnifunc != '' |
+            \   call SuperTabChain(&omnifunc, "<c-p>") |
+            \   call SuperTabSetDefaultCompletionType("<c-x><c-u>") |
+            \ endif
