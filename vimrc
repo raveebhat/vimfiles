@@ -105,6 +105,10 @@ nnoremap <F4> :NERDTreeTabsToggle<CR>
 " open tagbar window
 nmap <F8> :TagbarToggle<CR>
 
+"open ctrlp window, fixes conflict between yankring mappings
+let g:ctrlp_map = '<leader>f'
+nnoremap <leader>b :CtrlPBuffer<CR>
+
 "logical movement
 noremap j gj
 noremap k gk
