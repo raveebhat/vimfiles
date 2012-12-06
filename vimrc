@@ -68,6 +68,7 @@ set backspace=indent,eol,start  "Allow backspace in insert mode
 set history=10000               "Store lots of :cmdline history
 set gcr=a:blinkon0              "Disable cursor blink, does not work in terminal
 set visualbell                  "No sounds
+set t_vb=                       "No flashes
 set autoread                    "Reload files changed outside vim
 set cursorline                  "highlight the current line always
 set ruler                       "get a handy ruler in the corner
