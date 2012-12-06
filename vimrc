@@ -132,6 +132,7 @@ set shiftwidth=4
 set softtabstop=4
 set tabstop=4
 set expandtab
+set shiftround "round off indent to multiple of shiftwidth, untested
 
 filetype plugin on
 filetype indent on
