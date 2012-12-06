@@ -80,7 +80,7 @@ set laststatus=2                "always show the status line, required with powe
 set nofoldenable                "Say no to code folding...
 set cpoptions+=$                "show $ at the end of the selection when using c,has to be here otherwise it gets reset
 set listchars=tab:▸\ ,eol:¬     "set characters to represent tabs and \n when visible
-set scrolloff=3                 "add some context while scroling
+let &scrolloff=999-&scrolloff   "always center the current line
 set spelllang=en_gb             "set spell to use british english
 syntax on
 
