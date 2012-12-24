@@ -78,6 +78,10 @@ set cpoptions+=$                "show $ at the end of the selection when using c
 set listchars=tab:▸\ ,eol:¬     "set characters to represent tabs and \n when visible
 let &scrolloff=999-&scrolloff   "always center the current line
 set spelllang=en_gb             "set spell to use british english
+set ignorecase                  "ignore case when looking for patterns
+set smartcase                   "overide ignore case when pattern has upper case
+set hlsearch                    "highlight matched patterns
+set incsearch                   "search incrementally for pattern
 syntax on
 
 " ================ remapped keys =====================
@@ -100,6 +104,9 @@ nmap <leader>s :set spell!<CR>
 
 "never press shift to enter commands again
 nmap ; :
+
+" remove highlighting
+nmap <leader>rh :noh<CR>
 
 " Quickly edit/reload the vimrc file
 nmap <silent> <leader>ev :tabe $MYVIMRC<CR>
