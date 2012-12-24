@@ -89,9 +89,6 @@ syntax on
 " remap leader key
 let mapleader = ","
 
-" mapping esc to an easy to reach combo
-inoremap jk <ESC>
-
 " shows invisibles in normal mode
 nmap <leader>l :set list!<CR>
 
