@@ -114,11 +114,9 @@ map <leader>y "+y
 map <leader>p "+p
 
 " ================ Persistent swp/backup ==================
-" Keep swaps and backups in one place.
-" Only works all the time.
+" Keep swaps and backups in one place,
+" but avoid the current directory
 
-silent !mkdir ~/.vim/tmp > /dev/null 2>&1
-silent !mkdir ~/.vim/swp > /dev/null 2>&1
 set backupdir-=.
 set backupdir^=~/.vim/tmp,~/tmp,/tmp
 set directory=~/.vim/swp,~/tmp,.
