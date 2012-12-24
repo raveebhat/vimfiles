@@ -15,6 +15,7 @@ Bundle 'gmarik/vundle'
 "Autocompletion bundles
 Bundle 'kana/vim-smartinput'
 Bundle 'ervandew/supertab'
+Bundle 'tpope/vim-ragtag'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 Bundle 'honza/snipmate-snippets'
@@ -23,7 +24,6 @@ Bundle 'garbas/vim-snipmate'
 "file/directory movement bundles
 Bundle 'Lokaltog/vim-easymotion.git'
 Bundle 'scrooloose/nerdtree'
-Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-eunuch'
 if executable("ctags")
@@ -48,15 +48,11 @@ Bundle 'tpope/vim-git'
 "misc bundles
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/syntastic'
-Bundle 'jmcantrell/vim-virtualenv'
-Bundle 'myusuf3/numbers.vim'
 Bundle 'tpope/vim-fugitive'
 
 " Colorschemes
 Bundle 'nanotech/jellybeans.vim'
-Bundle 'tomasr/molokai'
-Bundle 'w0ng/vim-hybrid'
-Bundle 'jnurmine/Zenburn'
+Bundle 'altercation/vim-colors-solarized'
 
 " ================ General Config ====================
 
@@ -169,11 +165,10 @@ endif
 "syntastic
 let g:syntastic_error_symbol='✗' "change the default error symbol
 
-"NERDTree and NERDTreeTabs
-let g:nerdtree_tabs_open_on_gui_startup = 0 "never open nerdtree on startup
+"NERDTree
 let NERDTreeIgnore = ['\.pyc$'] "ignore files in file browser
 " open NERDTree window
-nnoremap <F4> :NERDTreeTabsToggle<CR>
+nnoremap <F4> :NERDTreeToggle<CR>
 
 "Gundo
 let g:gundo_preview_bottom = 1 "improve how gundo window is displayed
@@ -186,9 +181,6 @@ let g:SuperTabDefaultCompletionType = 'context' "use context to complete by defa
 
 let g:snips_trigger_key='<c-space>' "changed snipmate trigger key
 
-" toggle numbers using numbers.vim's function
-nnoremap <F3> :NumbersToggle<CR>
-
 " open tagbar window
 nmap <F8> :TagbarToggle<CR>
 
@@ -196,7 +188,7 @@ nmap <F8> :TagbarToggle<CR>
 let g:ctrlp_map = '<leader>f'
 nnoremap <leader>b :CtrlPBuffer<CR>
 
-" trying to get sensible completion to work
+" trying to get sensible completion to work, using supertab
 autocmd FileType *
             \ if &omnifunc != '' |
             \   call SuperTabChain(&omnifunc, "<c-p>") |
