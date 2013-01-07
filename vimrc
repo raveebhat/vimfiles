@@ -177,7 +177,9 @@ let g:gundo_preview_bottom = 1 "improve how gundo window is displayed
 " open gundo window
 nnoremap <F5> :GundoToggle<CR>
 
+"Yankring
 let g:yankring_persist = 0 "don't persist yankring across session
+let g:yankring_history_dir = '~/.vim'
 
 let g:SuperTabDefaultCompletionType = 'context' "use context to complete by default
 
