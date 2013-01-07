@@ -147,7 +147,6 @@ filetype indent on
 set nowrap       "Don't wrap lines
 set linebreak    "Wrap lines at convenient points, without inserting <EOL>s
 
-
 " ================ Completion =======================
 
 set wildmenu
@@ -157,7 +156,7 @@ set wildignore=.svn,CVS,.git,.hg,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jp
 " ================ Appearance =======================
 
 try
-  "get jellybeans colorscheme
+  "get custom colorscheme
   colorscheme solarized
 catch "if you can't, use this scheme
   colorscheme slate
