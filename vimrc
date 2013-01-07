@@ -107,9 +107,12 @@ nmap ; :
 " remove highlighting
 nmap <leader>rh :noh<CR>
 
-" Quickly edit/reload the vimrc file
-nmap <silent> <leader>ev :tabe $MYVIMRC<CR>
-nmap <silent> <leader>sv :so $MYVIMRC<CR>
+" a more logical Y in normal mode
+nnoremap Y y$
+
+" Quickly edit/reload the vimrc file in the repo
+nmap <silent> <leader>ev :tabe ~/.vim/vimrc<CR>
+nmap <silent> <leader>sv :echo "Reloading vimrc..."<CR>:so $MYVIMRC<CR>:echo "Reloading vimrc...DONE"<CR>
 
 "key mappings to copy paste using system clipboard
 map <leader>y "+y
