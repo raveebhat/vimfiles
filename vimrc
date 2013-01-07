@@ -122,9 +122,13 @@ map <leader>p "+p
 " Keep swaps and backups in one place,
 " but avoid the current directory
 
-set backupdir-=.
-set backupdir^=~/.vim/tmp,~/tmp,/tmp
-set directory=~/.vim/swp,~/tmp,.
+if isdirectory(expand('~/.cache/vim'))
+    set directory^=~/.cache/vim//
+    set backupdir^=~/.cache/vim//
+else "never store it in the current directory ever
+    set backupdir-=.
+    set directory-=.
+endif
 
 " ================ Indentation ======================
 
