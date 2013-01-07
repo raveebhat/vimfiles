@@ -8,9 +8,8 @@ rm -f ~/.vimrc 2>/dev/null
 #retrieve my files, and setup it up
 git clone https://github.com/ajy/vimfiles ~/.vim && cd ~/.vim && ln -s ~/.vim/vimrc ~/.vimrc
 
-#create backup and swap directories
-mkdir ~/.vim/tmp
-mkdir ~/.vim/swp
+#create backup and swap directory
+mkdir ~/.cache/vim
 
 # get vundle first
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
