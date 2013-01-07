@@ -39,6 +39,7 @@ Bundle 'godlygeek/tabular'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'tpope/vim-abolish'
 Bundle 'vim-scripts/YankRing.vim'
+Bundle 'sjl/clam.vim'
 
 "Language support bundles
 Bundle 'tpope/vim-markdown'
@@ -191,6 +192,10 @@ nmap <F8> :TagbarToggle<CR>
 "open ctrlp window, fixes conflict between yankring mappings
 let g:ctrlp_map = '<leader>f'
 nnoremap <leader>b :CtrlPBuffer<CR>
+
+" clam bindings
+nnoremap ! :Clam<space>
+vnoremap ! :ClamVisual<space>
 
 " trying to get sensible completion to work, using supertab
 autocmd FileType *
