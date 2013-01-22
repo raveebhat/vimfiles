@@ -52,7 +52,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
 
 " Colorschemes
-Bundle 'http://vimcolorschemetest.googlecode.com/svn/colors/blink.vim'
+
 
 " ================ General Config ====================
 
