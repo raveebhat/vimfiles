@@ -52,8 +52,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
 
 " Colorschemes
-Bundle 'nanotech/jellybeans.vim'
-Bundle 'altercation/vim-colors-solarized'
+Bundle 'http://vimcolorschemetest.googlecode.com/svn/colors/blink.vim'
 
 " ================ General Config ====================
 
