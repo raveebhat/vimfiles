@@ -6,7 +6,7 @@ cp ~/.vimrc ~/.vimrc_backup 2>/dev/null
 rm -f ~/.vimrc 2>/dev/null
 
 #retrieve my files, and setup it up
-git clone https://github.com/ajy/vimfiles ~/.vim && cd ~/.vim && ln -s ~/.vim/vimrc ~/.vimrc
+git clone https://github.com/raveebhat/vimfiles ~/.vim && cd ~/.vim && ln -s ~/.vim/vimrc ~/.vimrc
 
 #create backup and swap directory
 mkdir ~/.cache/vim
